@@ -7,15 +7,22 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="header">
+        <h2>“Life moves pretty fast. If you don't stop and look around once in a while, you could miss it.”<br>
+            ― Ferris Bueller</h2>
+        <p id="currentDateTime"></p>
+    </div>
+
     <div class="container">
-        <label for="dob">Your date of birth is-</label>
+        <label for="dob">Enter your date of birth:</label>
         <input type="date" id="dob" onchange="calculateAge()">
         <p id="age"></p>
-        <button onclick="resetForm()">Reset</button>
         <p id="additionalInfo"></p>
+        <p id="yearsPassed"></p>
+        <p id="percentagePassed"></p>
+        <button onclick="resetForm()">Reset</button>
     </div>
+
     <script src="app.js"></script>
 </body>
 </html>
-
-
